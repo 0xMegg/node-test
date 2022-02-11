@@ -1,9 +1,6 @@
-function hasUniqueTargetNumber(arr, target) {
-    const io = arr.indexOf(target);
-    const lio = arr.lastIndexOf(target);
+function sumOfValuesOfUpperCasedKey(obj) {
+  let obj =  Object.entries(obj);
 }
-
-console.log( 
-  'result : ', 
-  
-);
+let obj = {'A': 1, 'a': 2, 'c': 3, 'd': 4};
+const result = sumOfValuesOfUpperCasedKey(obj);
+console.log(result);

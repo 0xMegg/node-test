@@ -2,6 +2,7 @@ function getPosts() {
 }
 
 function getPostById(postId) {
+  
 }
 
 function getPostsByUserId(userId) {

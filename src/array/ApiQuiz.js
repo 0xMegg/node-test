@@ -62,16 +62,39 @@ function hasUniqueTargetNumber(arr, target) {
 }
 
 function hasAnyElement(arr1, arr2) {
-
+  let bool = false;
+  for(let i=0;i<arr2.length;i++){
+    if(arr1.includes(arr2[i])){
+      bool = true;
+    }
+  }
+  return bool;
 }
 
-function splicingArray(arr1, n, m) {}
+function splicingArray(arr1, n, m) {
+  let arr2 = [];
+  let arr3 = []; 
+  arr2 = arr1.splice(0, n);
+  arr3 = arr1.splice(0, m);
+  return arr2.concat(arr3);
+}
 
-function reversingArray(arr) {}
+function reversingArray(arr) {
+  const copy = arr;
+  return copy.reverse();
+}
 
-function findEvenAndOdds(arr1, arr2, isEven, isOdd) {}
+function findEvenAndOdds(arr1, arr2, isEven, isOdd) {
+  let result = 0;
+  const finded1 = arr1.find(isEven);
+  const finded2 = arr2.find(isOdd);
+  result = result + finded1 + finded2;
+  return result;
+}
 
-function findFirstMultipleOf6(arr, isEven, isMultipleOf3) {}
+function findFirstMultipleOf6(arr, isEven, isMultipleOf3) {
+  
+}
 
 function isEveryXEvenAndYOdd(arr, isEven, isOdd) {}
 

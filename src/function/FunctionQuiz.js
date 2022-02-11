@@ -1,4 +1,5 @@
-function functionAsParams1() {
+function functionAsParams1(any) {
+  return f(any);
 }
 
 function functionAsParams2() {
